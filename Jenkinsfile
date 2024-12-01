@@ -3,7 +3,7 @@ pipeline {
 
     parameters {
         string(name:'Your Name',defaultValue:'Shubham', description:'Enter your name')
-        choice(name:'Your favourite place in pune', choices['Mahabaleshwar','Lonavala','Lavasa'])
+        choice(name:'Your favourite place in pune', choices:['Mahabaleshwar','Lonavala','Lavasa'], description:'your favourite place to out')
     }
 
     stages {
